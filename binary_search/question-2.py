@@ -3,8 +3,8 @@
 # Find smallest letter greater than target
 
 input_arr = ['c', 'f', 'j']
-target = 'c'
-output = 'c'
+target = 'k'
+output = 'f'
 
 
 def next_greatest_letter(letters, target):
@@ -16,7 +16,7 @@ def next_greatest_letter(letters, target):
             end = mid
         else:
             start = mid+1
-    return letters[start%len(letters)]
+    return letters[start % len(letters)]
 
 
 
